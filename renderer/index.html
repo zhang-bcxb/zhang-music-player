@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本地音乐播放器</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'/>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<div class="container mt-4">
+    <h1>我的播放器</h1>
+    <button id="add-music-btn" class="btn btn-primary mb-3" type="button">添加歌曲到曲库</button>
+    <div id="tracks-list" class="mb-2">您还没有任何音乐文件</div>
+</div>
+<div class="container fixed-bottom bg-white pb-4">
+    <hr/>
+    <div class="row my-2" id="player-status"></div>
+    <div class="progress">
+        <div id="player-progress" class="progress-bar bg-success" role="progressbar" style="width: 0%;">0%</div>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>

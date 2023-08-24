@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加音乐</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container button {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-4">
+    <h1>添加音乐到曲库</h1>
+    <div id="music-list" class="mb-2">您还未选择任何音乐文件</div>
+    <button id="select-music-btn" class="btn btn-outline-primary" type="button">添加音乐</button>
+    <button id="add-music-btn" class="btn btn-primary mt-2" type="button">导入音乐</button>
+</div>
+
+<script src="add.js"></script>
+</body>
+</html>

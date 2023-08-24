@@ -1,0 +1,32 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "简易音乐播放器",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "onlyEle": "nodemon --watch main.js --exec \"electron .\"",
+    "devEle": "nodemon --watch main.js --watch renderer/*.* --exec \"electron .\""
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^24.1.2",
+    "electron-builder": "^23.6.0",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "electron-store": "^8.1.0",
+    "uuid": "^9.0.0"
+  }
+}
